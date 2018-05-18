@@ -25,7 +25,6 @@ minimal tools to find not static unused functions from C code
 ```
 
 and add prefix you export functions: FUNINLINE or FUNEXPORT (Required find-unused-function.h)
-to Makefile, and make source
 
 example:
 
@@ -33,6 +32,8 @@ example:
  FUNINLINE int fun1(..) { .. }
  FUNEXPORT int fun2(..) { .. }
 ```
+
+  - edit Makefile, and make source
 
 after run:
     
