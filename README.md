@@ -2,13 +2,13 @@
 
 minimal tools to find unused functions from C code
 
-##Required:##
+## Required:
 
 - GCC 4.x
 - nm (any version)
 - find :)
 
-##Use:##
+## Use:
 
   - add CFLAGS:  -ffunction-sections -fdata-sections
   - add LDFLAGS: -Wl,-gc-sections
