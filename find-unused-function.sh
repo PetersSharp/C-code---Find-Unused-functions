@@ -42,7 +42,7 @@
 
     if [[ "${3}" != "" && -d "${3}" ]] ;
     then
-        find "${3}" -iname "*.[chsCHS]" -exec grep -E "(FUNINLINE|FUNEXPORT)" {} \; | grep -v "define" | grep -v "__EV" | awk -F"(" '{ print $1 }' | awk '{ print $NF }' | sort | uniq >"${TMPDIR}/symbols.defs"
+        find "${3}" -iname "*.[chsCHS]" -exec grep -E "(FUNINLINE|FUNEXPORT)" {} \; | grep -v "define" | awk -F"(" '{ print $1 }' | awk '{ print $NF }' | sort | uniq >"${TMPDIR}/symbols.defs"
         diff -u "${TMPDIR}/symbols.defs" "${TMPDIR}/symbols.defb" | grep -v "@" | grep "-" >"${TMPDIR}/symbols.unused-source"
         echo -e "\n\tSee source export list in: ${TMPDIR}/symbols.unused-source"
     fi
