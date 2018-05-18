@@ -1,6 +1,6 @@
 # C code - Find unused functions
 
-minimal tools to find unused functions from C code
+minimal tools to find not static unused functions from C code
 
 ## Required:
 
