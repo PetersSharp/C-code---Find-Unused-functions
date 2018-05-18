@@ -15,11 +15,18 @@ minimal tools to find unused functions from C code
   - (optionals) add to source file:
   
 ```
-#include "find-unused.h",
+#include "find-unused-function.h"
 ```
 
-and add prefix you export functions: FUNINLINE or FUNEXPORT (Required find-unused.h)
+and add prefix you export functions: FUNINLINE or FUNEXPORT (Required find-unused-function.h)
 to Makefile, and make source
+
+example:
+
+```
+ FUNINLINE int fun1(..) { .. }
+ FUNEXPORT int fun2(..) { .. }
+```
 
 after run:
     
