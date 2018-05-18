@@ -38,4 +38,9 @@ good idea, create link:
 ```
    ln -s /usr/bin/find-unused-function.sh /usr/bin/fuf
 ```
+Result produce files:
+
+```
+   path/object-dir/DebugSymbol/symbols.*
+```
 
