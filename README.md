@@ -18,7 +18,7 @@ minimal tools to find unused functions from C code
 ```
   -Wl,-gc-sections
 ```
-  - (optionals) add to source file:
+  - (optionals) add to source files:
   
 ```
 #include "find-unused-function.h"
