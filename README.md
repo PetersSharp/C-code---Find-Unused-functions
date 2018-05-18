@@ -10,8 +10,14 @@ minimal tools to find unused functions from C code
 
 ## Use:
 
-  - add CFLAGS:  -ffunction-sections -fdata-sections
-  - add LDFLAGS: -Wl,-gc-sections
+  - add CFLAGS:
+```
+  -ffunction-sections -fdata-sections
+```
+  - add LDFLAGS:
+```
+  -Wl,-gc-sections
+```
   - (optionals) add to source file:
   
 ```
