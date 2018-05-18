@@ -1,6 +1,6 @@
 //--------------------------------------------------------------------------------------
 //
-//    See: Find-Unused.sh
+//    See: find-unused-function.sh
 //
 //        Required:
 //
@@ -13,9 +13,9 @@
 //        - add CFLAGS:  -ffunction-sections -fdata-sections
 //        - add LDFLAGS: -Wl,-gc-sections
 //        - (optionals) add to source file: #include "find-unused.h",
-//          and add prefix you export functions: FUNINLINE or FUNEXPORT (Required find-unused.h)
+//          and add prefix you export functions: FUNINLINE or FUNEXPORT (Required find-unused-function.h)
 //        to Makefile, and make source
-//        after run: ./Find-Unused.sh <path/compiled-name.bin> <path/object-dir/*.o> [<path/source-dir/*.c|h>]
+//        after run: ./find-unused-function.sh <path/compiled-name.bin> <path/object-dir/*.o> [<path/source-dir/*.c|h>]
 //
 //    You can find latest source:
 //     - https://github.com/PetersSharp/C-code---Find-Unused-functions
