@@ -18,4 +18,6 @@ minimal tools to find unused functions from C code
 
     after run:
     
-       ./Find-Unused.sh <path/compiled-name.bin> <path/object-dir/*.o> [<path/source-dir/*.c *.h>]
+```
+   ./Find-Unused.sh <path/compiled-name.bin> <path/object-dir/*.o> [<path/source-dir/*.c *.h>]
+```
