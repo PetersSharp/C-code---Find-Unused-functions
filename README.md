@@ -16,4 +16,6 @@ minimal tools to find unused functions from C code
     and add prefix you export functions: FUNINLINE or FUNEXPORT (Required find-unused.h)
     to Makefile, and make source
 
-    after run: ./Find-Unused.sh <path/compiled-name.bin> <path/object-dir/*.o> [<path/source-dir/*.c *.h>]
+    after run:
+    
+       ./Find-Unused.sh <path/compiled-name.bin> <path/object-dir/*.o> [<path/source-dir/*.c *.h>]
