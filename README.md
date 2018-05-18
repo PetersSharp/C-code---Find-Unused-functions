@@ -2,13 +2,13 @@
 
 minimal tools to find unused functions from C code
 
-##Required:
+##Required:##
 
 - GCC 4.x
 - nm (any version)
 - find :)
 
-##Use:
+##Use:##
 
   - add CFLAGS:  -ffunction-sections -fdata-sections
   - add LDFLAGS: -Wl,-gc-sections
@@ -16,4 +16,4 @@ minimal tools to find unused functions from C code
     and add prefix you export functions: FUNINLINE or FUNEXPORT (Required find-unused.h)
     to Makefile, and make source
 
-    after run: ./Find-Unused.sh <path/compiled-name.bin> <path/object-dir/*.o> [<path/source-dir/*.c|h>]
+    after run: ./Find-Unused.sh <path/compiled-name.bin> <path/object-dir/*.o> [<path/source-dir/*.c *.h>]
