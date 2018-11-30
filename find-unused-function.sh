@@ -28,6 +28,8 @@
     fi
 
     TMPDIR="${2}/DebugSymbol"
+    # replace possible '//' with '/'
+    TMPDIR=${TMPDIR//\/\//\/}
 
     if [[ ! -d "${TMPDIR}" ]] ;
     then
